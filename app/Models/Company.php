@@ -20,4 +20,10 @@ class Company extends Model
         'password',
         'logo',
     ];
+    
+    //Relationship with Job
+    public function job() {
+        return $this->hasMany(Job::class, 'company_id');
+    }
+
 }

@@ -16,4 +16,9 @@ class Job extends Model
         'postDate',
         'startDate',
     ];
+
+    //Relationship with Company
+    public function company() {
+        return $this->belongsTo(Company::class, 'id');
+    }
 }
