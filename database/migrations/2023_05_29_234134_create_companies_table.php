@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('city');
-            $table->integer('zipcode');
+            $table->string('zipcode');
             $table->string('email');
             $table->string('password');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('logo');
             $table->longText('description');
             $table->timestamps();
