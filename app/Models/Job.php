@@ -19,6 +19,6 @@ class Job extends Model
 
     //Relationship with Company
     public function company() {
-        return $this->belongsTo(Company::class, 'id');
+        return $this->belongsTo(Company::class, 'company_id');
     }
 }

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CompanyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//indexes
+Route::get('/jobs', [JobController::class, 'index']);
+Route::get('/companies', [CompanyController::class, 'index']);
+Route::get('/users', [UserController::class, 'index']);
+
+//single view
+Route::get('/jobs/{job}', [JobController::class, 'show']);
+Route::get('/companies/{company}', [CompanyController::class, 'show']);
+Route::get('/users/{user}', [UserController::class, 'show']);
+
+
+Route::get('/', function() {
+    return view('components.layout');
 });
