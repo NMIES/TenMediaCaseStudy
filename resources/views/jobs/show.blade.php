@@ -10,7 +10,6 @@
 				<th>startDate</th>
 				<th></th>
 				<th></th>
-				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -21,8 +20,7 @@
 				<td>{{$job->description}}</td>
 				<td>{{$job->postDate}}</td>
 				<td>{{$job->startDate}}</td>
-				<th><button><a href="/jobs/{{$job->id}}">view</a></button></th>
-				<th><button>edit</button></th>
+				<th><button><a href="/jobs/{{$job->id}}/edit">edit</a></button></th>
 				<th><button>delete</button></th>
 			</tr>		
 		</tbody>

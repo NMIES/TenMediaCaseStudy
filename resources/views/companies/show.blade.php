@@ -14,7 +14,6 @@
 				<th>description</th>
 				<th></th>
 				<th></th>
-				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -29,7 +28,6 @@
 				<td>{{$company->phone}}</td>
 				<td>{{$company->logo}}</td>
 				<td>{{$company->description}}</td>
-				<th><button><a href="/companies/{{$company->id}}">view</a></button></th>
 				<th><button>edit</button></th>
 				<th><button>delete</button></th>
 			</tr>		

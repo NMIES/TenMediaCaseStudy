@@ -26,6 +26,11 @@ Route::get('/jobs/{job}', [JobController::class, 'show']);
 Route::get('/companies/{company}', [CompanyController::class, 'show']);
 Route::get('/users/{user}', [UserController::class, 'show']);
 
+//show edits
+Route::get('/jobs/{job}/edit', [JobController::class, 'edit']);
+
+//updates
+Route::put('/jobs/{job}/edit', [JobController::class, 'update']);
 
 Route::get('/', function() {
     return view('components.layout');

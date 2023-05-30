@@ -15,7 +15,6 @@
 				<th>picture</th>
 				<th></th>
 				<th></th>
-				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -31,7 +30,6 @@
 				<td>{{$user->password}}</td>
 				<td>{{$user->birthdate}}</td>
 				<td>{{$user->picture}}</td>
-				<th><button><a href="/users/{{$user->id}}">view</a></button></th>
 				<th><button>edit</button></th>
 				<th><button>delete</button></th>
 			</tr>		
