@@ -6,5 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ten Media Case Study</title>
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
 </head>
+<body>
+		<header>
+			<div class="header">
+				<a>Ten Media Case Study<a>
+				<div>
+					<a href="/jobs">Jobs</a>
+					<a href="/companies">Companies</a>
+					<a href="/users">Users</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			{{$slot}}
+		</main>
+</body>
+</html>
