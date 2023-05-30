@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('company_id')->constrained()->onDelete('cascade');
             $table->string('title');
-            $table->string('title');
             $table->longText('description');
             $table->dateTime('postDate');
             $table->date('startDate');
